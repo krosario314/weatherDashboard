@@ -1,0 +1,1 @@
+const citiesList = document.querySelector("")
