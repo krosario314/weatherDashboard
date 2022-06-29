@@ -1,3 +1,6 @@
+.hide {
+    display: none;
+}
 :root {
     background-color: rgb(125, 186, 239);
 }

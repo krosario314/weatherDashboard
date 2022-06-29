@@ -19,71 +19,77 @@
             <div class="inputCity">
                 <input class="form-control" type="text" id="cityInput" placeholder="Search Cities">
                 <div class="appendInput">
-                    <button class="btn btn-primary" id="addCity" type="button"></button>
+                    <button class="btn btn-primary" id="searchCity" type="button"></button>
                 </div>
             </div>
-            <div class="card" style="width: 15rem;">
-                <ul class="list-group list-group-flush">
-                    <!-- This will list the search history -->
-                </ul>
-            </div>
-        </div>
-        <!-- second column -->
-        <div class="col-8 m-2">
-            <div class="row-12">
-                <div class="card">
-                    <div class="card-body" id="todaysWeather">
-                    <!-- check --> 
+            <div id="searchHistory">
+                <div class="col-9">
+                    <div class="row border border-dark">
+                        <h1 id="locationName"></h1>
+                        <p id="temperature"></p>
+                        <p id="wind"></p>
+                        <p id="humid"></p>
+                        <p id="uv"></p>
                     </div>
                 </div>
             </div>
-            <div class="row-12">
-                <h2>5 Day Forecast:</h2>
-                <div class="container px-4">
-                    <div class="row gx-2">
-                        <div class="col-2">
-                            <div class="bg-primary text-white p-3" id="dayOne">
-                                <div id="day1Date"></div>
-                                <div id="day1Icon"></div>
-                                <div id="day1Temperature"></div>
-                                <div id="day1Windspeed"></div>
-                                <div id="day1Humity"></div>
-                            </div>
+        <!-- second column -->
+            <div class="col-8 m-2">
+                <div class="row-12">
+                    <div class="card">
+                        <div class="card-body" id="todaysWeather">
+                        <!-- check --> 
                         </div>
-                        <div class="col-2">
-                            <div class="bg-primary text-white p-3" id="dayTwo">
-                                <div id="day2Date"></div>
-                                <div id="day2Icon"></div>
-                                <div id="day2Temperature"></div>
-                                <div id="day2Windspeed"></div>
-                                <div id="day2Humity"></div>
+                    </div>
+                </div>
+                <div class="row-12">
+                    <h2>5 Day Forecast:</h2>
+                    <div class="container px-4">
+                        <div class="row gx-2">
+                            <div class="col-2">
+                                <div class="bg-primary text-white p-3" id="dayOne">
+                                    <div id="day1Date"></div>
+                                    <div id="day1Icon"></div>
+                                    <div id="day1Temperature"></div>
+                                    <div id="day1Windspeed"></div>
+                                    <div id="day1Humity"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="bg-primary text-white p-3" id="dayThree">
-                                <div id="day3Date"></div>
-                                <div id="day3Icon"></div>
-                                <div id="day3Temperature"></div>
-                                <div id="day3Windspeed"></div>
-                                <div id="day3Humity"></div>
+                            <div class="col-2">
+                                <div class="bg-primary text-white p-3" id="dayTwo">
+                                    <div id="day2Date"></div>
+                                    <div id="day2Icon"></div>
+                                    <div id="day2Temperature"></div>
+                                    <div id="day2Windspeed"></div>
+                                    <div id="day2Humity"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="bg-primary text-white p-3" id="dayFour">
-                                <div id="day4Date"></div>
-                                <div id="day4Icon"></div>
-                                <div id="day4Temperature"></div>
-                                <div id="day4Windspeed"></div>
-                                <div id="day4Humity"></div>
+                            <div class="col-2">
+                                <div class="bg-primary text-white p-3" id="dayThree">
+                                    <div id="day3Date"></div>
+                                    <div id="day3Icon"></div>
+                                    <div id="day3Temperature"></div>
+                                    <div id="day3Windspeed"></div>
+                                    <div id="day3Humity"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="bg-primary text-white p-3" id="dayFive">
-                                <div id="day5Date"></div>
-                                <div id="day5Icon"></div>
-                                <div id="day5Temperature"></div>
-                                <div id="day5Windspeed"></div>
-                                <div id="day5Humity"></div>
+                            <div class="col-2">
+                                <div class="bg-primary text-white p-3" id="dayFour">
+                                    <div id="day4Date"></div>
+                                    <div id="day4Icon"></div>
+                                    <div id="day4Temperature"></div>
+                                    <div id="day4Windspeed"></div>
+                                    <div id="day4Humity"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="bg-primary text-white p-3" id="dayFive">
+                                    <div id="day5Date"></div>
+                                    <div id="day5Icon"></div>
+                                    <div id="day5Temperature"></div>
+                                    <div id="day5Windspeed"></div>
+                                    <div id="day5Humity"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -91,6 +97,6 @@
             </div>
         </div>
     </div>
-    
-</body>
+    <script src="./assets/script/index.js"></script>
+    </body>
 </html>
