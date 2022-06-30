@@ -39,3 +39,21 @@ const day3Humid = document.getElementById("#day3Humid");
 const day4Humid = document.getElementById("#day4Humid");
 const day5Humid = document.getElementById("#day5Humid");
 // function
+function getLocation(cityName) {
+    const urlKey = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + myKeyAPI;
+
+    fetch(urlKey).then(function(response) {
+        response.json().then(function(data) {
+            const cityLatitude = data.coordinate.lat;
+            const cityLongitude = data.coordinate.lon;
+            const coorUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + cityLatitude + "&lon=" + cityLongitude + "&appid=" + myKeyAPI;
+
+            fetch(coorUrl).then(function(response) {
+                response.json().then(function(data) {
+                    console.log(data);
+                    const weatherIcon = $("<img src='http://openweathermap.org/img/wn/10d@2x.png')
+                })
+            })
+        })
+    })
+}
