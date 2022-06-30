@@ -41,13 +41,13 @@ const day5Humid = document.getElementById("#day5Humid");
 
 // get location function
 function getLocation(cityName) {
-    const urlKey = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + myKeyAPI;
+    const urlKey = "https://api.openweathermap.org/data/2.5/weather?q=a1442ff4c1b174ffb5b28e15ebbafa8f" + city + "&appid=" + myKeyAPI;
 
     fetch(urlKey).then(function(response) {
         response.json().then(function(data) {
             const cityLatitude = data.coordinate.lat;
             const cityLongitude = data.coordinate.lon;
-            const coorUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + cityLatitude + "&lon=" + cityLongitude + "&appid=" + myKeyAPI;
+            const coorUrl = "https://api.openweathermap.org/data/2.5/weather?lat=a1442ff4c1b174ffb5b28e15ebbafa8f" + cityLatitude + "&lon=" + cityLongitude + "&appid=" + myKeyAPI;
 
             fetch(coorUrl).then(function(response) {
                 response.json().then(function(data) {
@@ -112,6 +112,3 @@ function historyBtn(event) {
     getLocation(cityHistory);
 }
 
-// back
-searchBtn.on("click", clickSearch);
-searchHistory.on("click", historyBtn);
